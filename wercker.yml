@@ -1,4 +1,4 @@
-box: python2.7 
+box: python:2.7 
 services:
     - rethinkdb
     - rabbitmq
