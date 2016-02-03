@@ -1,4 +1,4 @@
-box: ubuntu12.04-webessentials
+box: ubuntu
 services:
     - rethinkdb
     - rabbitmq
