@@ -5,7 +5,8 @@ build:
   steps:
     - script:
         name: Install dependencies
-        code: apt-get install pip         
+        code: apt-get install python-pip python-dev build-essential  
+            
 #    - script:
 #        name: Install pip
 #        code: yum -y install epel-release; yum clean all; yum -y install python-pip
