@@ -4,9 +4,6 @@ services:
     - rabbitmq
 build:
   steps:
-    - script:
-        name: Install dependencies
-        code: apt-get install python-pip python-dev build-essential  
     - pip-install:
         requirements_file: ""
         packages_list: "nose"
