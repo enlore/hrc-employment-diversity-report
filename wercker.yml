@@ -1,0 +1,20 @@
+box: ubuntu 
+services:
+    - rethinkdb
+build:
+  steps:
+#    - script:
+#        name: Install dependencies
+#        code: yes | yum install -y openssh git         
+#    - script:
+#        name: Install pip
+#        code: yum -y install epel-release; yum clean all; yum -y install python-pip
+    - pip-install:
+        requirements_file: ""
+        packages_list: "nose"
+    - script:
+        name: installation 
+        code: python setup.py install 
+    - script:
+        name: Run backend api tests
+        code: nosetests -v ntp.data.tests/*.py 
