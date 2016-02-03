@@ -17,4 +17,4 @@ build:
         code: python setup.py install 
     - script:
         name: Run backend api tests
-        code: nosetests -v ntp.data.tests/*.py 
+        code: nosetests -v ntp/data/tests/*.py 
